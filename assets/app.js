@@ -19,6 +19,49 @@ function eventSearch() {
     }
   }
 
+// EVents Objects
+const events = {
+    events: [
+        {
+            id: 1,
+            name: 'Birthday Event',
+            date: '2020-01-01',
+            time: '10:00',
+            location: ' Karachi',
+            description: 'Description 1',
+            image: 'https://source.unsplash.com/random/400x200'
+        },
+        {
+            id: 2,
+            name: 'FArewell',
+            date: '2020-01-02',
+            time: '10:00',
+            location: 'KArachi',
+            description: 'Description 2',
+            image: 'https://source.unsplash.com/random/400x200'
+        },
+        {
+            id: 3,
+            name: 'Engagement',
+            date: '2020-01-03',
+            time: '10:00',
+            location: 'Karachi',
+            description: 'Description 3',
+            image: 'https://source.unsplash.com/random/400x200'
+        },
+        {
+            id: 4,
+            name: 'Wedding',
+            date: '2020-01-04',
+            time: '10:00',
+            location: 'Karachi',
+            description: 'Description 4',
+            image: 'https://source.unsplash.com/random/400x200'
+        },
+    ]
+};
+console.log(events)
+
 
 
 // COntact Form Validation
