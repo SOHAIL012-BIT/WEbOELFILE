@@ -52,6 +52,9 @@
                 <a class="nav-link" href="#events">Events</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="#eventDetails">Events Details</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link">Event Registration</a>
               </li>
               <li class="nav-item">
@@ -133,69 +136,130 @@
             margin-bottom: 5px;
             text-align: center;
             padding-top: 20px;
+            color: whitesmoke;
           "
         >
           EVENTS
         </h3>
         <div class="container">
-            <div class="row">
-            <div class="col-md-6 eventline">
+            <div class="row eventline">
+            <div class="col-md-6 ">
                 <p>We have Events for you of all types</p>
             </div>
-            <div class="col-md-4">
-                <input 
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"/>
-            </div>
             <div class="col-md-2">
-                <button class="btn btn-outline-success" type="submit">
+                <a href="#eventDetails"><button class="btn btn-outline-success" type="submit" >
                   Search Event
-                </button>
-            </div> 
-            <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                <img src="assets/images/event1" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
+                </button></a>
+            </div>
+            <div class="eventcards">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/images/birthdayEvent.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Birthday Event</h5>
+                                <p class="card-text" style="font-size:15pt; color:black;">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/images/farwell.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Farewell Event</h5>
+                                <p class="card-text"  style="font-size:15pt; color:black;">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="assets/images/seminars.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Seminars</h5>
+                                <p class="card-text" style="font-size:15pt; color:black;">
+                                    Some quick example text to build on the card title and make up the bulk of the card's content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card">
-                <img src="assets/images/event2" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                <img src="assets/images/event3" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                    Some quick example text to build on the card title and make up
-                    the bulk of the card's content.
-                    </p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-                </div>
-            </div>
-
+        </div>
     </section>
+
+<section id="eventDetails" class="eventDetails">
+    <h3
+    style="
+      font-size: 22;
+      margin-bottom: 5px;
+      text-align: center;
+      padding-top: 20px;
+      color: whitesmoke;
+    "
+  >
+    EVENTS DETAILS
+  </h3>
+  <div class="row eventline">
+    <div class="col-md-3">
+        <input type="text" class="form-control"id="myInput" placeholder="Search Event"  onkeyup="eventSearch()" >
+        </div>
+    
+    </div>
+    <table id="myTable">
+        <tr class="header">
+          <th style="width:20%;">Event Name</th>
+          <th style="width:20%;">Event Type</th>
+          <th style="width:20%;">Event Date</th>
+          <th style="width:20%;">Event Time</th>
+         <th style="width:20%;">Status</th>
+        </tr>
+        <tr>
+          <td>BUKC Farewell</td>
+          <td>Farewell Party</td>
+            <td>12/12/2020</td>
+            <td>12:00 PM</td>
+            <td style="background-color: yellow;">Active</td>
+        </tr>
+        <tr>
+          <td>Ali's Birthday</td>
+          <td>Birthday Party</td>
+            <td>12/12/2020</td>
+            <td>12:00 PM</td>
+            <td style="background-color: green;">Completed</td>
+        </tr>
+        <tr>
+          <td>KU Farewell</td>
+          <td>Farewell Party</td>
+            <td>12/12/2020</td>
+            <td>12:00 PM</td>
+            <td style="background-color: red;">Postponed</td>
+        </tr>
+        <tr>
+          <td>NayaPAy Seminar</td>
+          <td>Seminar</td>
+            <td>12/12/2020</td>
+            <td>12:00 PM</td>
+            <td style="background-color: yellow;">Active</td>
+        </tr>
+        <tr>
+          <td>10 Pearls Recrutment</td>
+          <td>Seminar </td>
+            <td>12/12/2020</td>
+            <td>12:00 PM</td>
+            <td style="background-color: green;">Completed</td>
+        </tr>
+      </table>
+
+
+</section>
+
   </body>
 
   <!-- Bootstrap -->
